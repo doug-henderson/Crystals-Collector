@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+
+
+<head>
+	<title>Crystals Collector</title>
+    <meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>	
+        <div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<h1>Crystals Collector</h1>
+					<h4><small>You will be given a random number at the start of the game.</small></h4>
+					<h4><small>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</small></h4>
+					<h4><small>You win the game by matching your total score to random number. You lose the game if your total score goes above the random number.</small></h4>
+					<h4><small>The value of each crystal is hidden from you until you click on it.</small></h4>
+					<h4><small>Each time when the game starts, the game will change the values of each crystal.</small></h4>
+				</div>
+			</div>
+
+		<!-- random number div and wins/losses div -->
+		<div class="row">
+			<div class="col-md-3 col-md-offset-1 randomNumberDiv">
+				<h2 id="randomNumber">random#</h2>
+			</div>
+			<div class="col-md-3 col-md-offset-1 winsLossesDiv">
+				<p id="winsTally">Wins: </p>
+				<p id="lossesTally">losses: </p>
+			</div>
+		</div>
+		<div class="row">
+<div class="col-md-12">
+	<img src="assets\images\crystal_1.jpg" width="100px">
+	<img src="assets\images\crystal_2.jpg" width="100px">
+	<img src="assets\images\crystal_3.jpg" width="100px">
+	<img src="assets\images\crystal_4.jpg" width="100px">
+</div>
+
+			</div>
+	    </div>
+		<!-- score text row -->
+		<div class="row">
+			<div class="col-md-3 col-md-offset-1 scoreDiv">
+				<p>Your total score is:</p>
+			</div>
+		</div>
+
+		<!-- user score div -->
+		<div class="row">
+			<div class="col-md-3 col-md-offset-1 scoreDiv">
+				<h2 id="userScore">score</h2>
+			</div>
+		</div>
+	<script type="text/javascript" src="assets/js/psy-game.js"></script>
+
+</body>
+
+</html>
+
