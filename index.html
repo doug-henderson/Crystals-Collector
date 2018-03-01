@@ -6,55 +6,48 @@
 	<title>Crystals Collector</title>
     <meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>	
-        <div class="container">
-			<div class="row">
-				<div class="col-md-6">
-					<h1>Crystals Collector</h1>
-					<h4><small>You will be given a random number at the start of the game.</small></h4>
-					<h4><small>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</small></h4>
-					<h4><small>You win the game by matching your total score to random number. You lose the game if your total score goes above the random number.</small></h4>
-					<h4><small>The value of each crystal is hidden from you until you click on it.</small></h4>
-					<h4><small>Each time when the game starts, the game will change the values of each crystal.</small></h4>
-				</div>
-			</div>
 
-		<!-- random number div and wins/losses div -->
-		<div class="row">
-			<div class="col-md-3 col-md-offset-1 randomNumberDiv">
-				<h2 id="randomNumber">random#</h2>
+
+	<body>
+		<h1>CRYSTAL COLLECTOR</h1>
+		<p id="instructions">
+			You will be given a random number at the start of the game.<br><br>There are four crystals below.  By clicking on a crystal you will add a specific amount of points to your total score. <br><br> You win the game by matching your total score to a random number, you lose the game if your total score goes above the random number.<br><br> The value of each crystal is hidden from you until you click on it.<br><br> Each time the game starts, the value of each crystal changes.
+		</p>
+		<div id="images">
+			<img src="assets/images/crystal_1.jpg" width="100" id="redcrystal" class="crystal">
+			<img src="assets/images/crystal_2.jpg" width="100" id="bluecrystal" class="crystal">
+			<img src="assets/images/crystal_3.jpg" width="100" id="yellowcrystal" class="crystal">
+			<img src="assets/images/crystal_4.jpg" width="100" id="greencrystal" class="crystal">
+		</div>
+	
+	
+		<div id="numberText">
+			<div id="match">Match This #:&nbsp<span id="randomNum"></span></div>
+	
+			<div id ="yourScore">
+				<div>Your Score:<span id="user_score"></span></div>
 			</div>
-			<div class="col-md-3 col-md-offset-1 winsLossesDiv">
-				<p id="winsTally">Wins: </p>
-				<p id="lossesTally">losses: </p>
+	
+			<div id="scoreboard">
+				<div>Wins:<span id="wins"></span></div> 
+				<div>Losses:<span id="losses"></span></div>
+				
 			</div>
 		</div>
-		<div class="row">
-<div class="col-md-12">
-	<img src="assets\images\crystal_1.jpg" width="100px">
-	<img src="assets\images\crystal_2.jpg" width="100px">
-	<img src="assets\images\crystal_3.jpg" width="100px">
-	<img src="assets\images\crystal_4.jpg" width="100px">
-</div>
-
-			</div>
-	    </div>
-		<!-- score text row -->
-		<div class="row">
-			<div class="col-md-3 col-md-offset-1 scoreDiv">
-				<p>Your total score is:</p>
-			</div>
-		</div>
-
-		<!-- user score div -->
-		<div class="row">
-			<div class="col-md-3 col-md-offset-1 scoreDiv">
-				<h2 id="userScore">score</h2>
-			</div>
-		</div>
-	<script type="text/javascript" src="assets/js/psy-game.js"></script>
-
+	
+	
+	
+	
+	
+	
+	
+	
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>	
+	<script type="text/javascript" src="assets/javascript/c_collector.js"></script>
+ 
 </body>
 
 </html>
